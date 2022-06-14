@@ -144,3 +144,27 @@ body {
 .projects .box:hover::before {
     transform: translateX(0);
 }
+
+.team {
+    background-color: var(--section-color);
+}
+
+.team .about-team h2 {
+    color: var(--yellow-color);
+}
+.team .box h4 {
+    color: white;
+    background-color: var(--green-color);
+}
+
+.start-proj {
+    background-color: var(--dark-color);
+}
+.start-proj h3 {
+    color: white;
+}
+
+.start-proj .active-btn:hover {
+    color: white;
+    border-color: white;
+}
