@@ -3,13 +3,27 @@
     --green-color: #33D1CC;
     --yellow-color: #FFC400;
     --section-color: #EFF7FA;
+    --red-color: #FF3150;
 }
 body {
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
     height: 10000px;
 }
-
+.active-btn {
+    color: var(--yellow-color);
+    background-color: var(--red-color);
+    text-decoration: none;
+    border: 1px solid var(--red-color);
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+.active-btn:hover {
+    background-color: transparent;
+    color: var(--dark-color);
+    border-color: var(--dark-color);
+}
 /* start NavBar */
 
 .navbar {
@@ -53,12 +67,12 @@ body {
 /* end landing section */
 
 /* start services section  */
-.services .serv-cont svg {
+.serv-cont svg {
     color: var(--yellow-color);
     font-size: 5rem;
 }
 
-.services .serv-cont::after {
+.serv-cont::after {
     content: '';
     width: 120px;
     height: 2px;
@@ -85,4 +99,48 @@ body {
 }
 .services .feat h4 {
     color: var(--yellow-color);
+}
+
+.projects {
+    background-color: var(--section-color);
+}
+
+.projects ul li {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.projects ul li.active {
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+}
+
+.projects ul li:not(.active):hover {
+    color: var(--red-color);
+}   
+
+.projects .box {
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.projects .box::before {
+    content: attr(data-work);
+    position: absolute;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #33d1cca1;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: 0.3s;
+    transform: translateX(calc(-100% - 5px));
+}
+
+.projects .box:hover::before {
+    transform: translateX(0);
 }
