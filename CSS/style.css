@@ -168,3 +168,44 @@ body {
     color: white;
     border-color: white;
 }
+
+.blog .box {
+    border: 2px solid var(--section-color);
+}
+
+.subscribe {
+    background-color: #FFC400;
+}
+.subscribe .box {
+    width: 80%;
+}
+.subscribe .box label {
+    color: var(--dark-color);
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.subscribe .box .email {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    width: 60%;
+}
+
+.subscribe .box .email::placeholder {
+    color: white;
+    font-weight: 700;
+}
+.subscribe .box .email:focus {
+    border: none;
+}
+
+.subscribe .box .sub-btn {
+    background-color: var(--dark-color);
+    color: var(--yellow-color);
+}
+
+.subscribe .box .sub-btn:hover {
+    background-color: transparent;
+    color: var(--dark-color);
+}
