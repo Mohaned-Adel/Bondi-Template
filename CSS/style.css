@@ -8,7 +8,6 @@
 body {
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
-    height: 10000px;
 }
 .active-btn {
     color: var(--yellow-color);
@@ -208,4 +207,46 @@ body {
 .subscribe .box .sub-btn:hover {
     background-color: transparent;
     color: var(--dark-color);
+}
+
+.footer {
+    background-color: var(--dark-color);
+}
+
+.footer span.main {
+    color: var(--green-color);
+}
+.footer span.sec {
+    color: var(--yellow-color);
+}
+
+.footer .contact-btn {
+    width: 100%;
+}
+.footer .contact-btn a {
+    color: var(--yellow-color);
+}
+.footer .contact-btn:hover {
+    border-color: var(--green-color);
+}
+.footer .contact-btn:hover a {
+    color: var(--green-color);
+}
+.footer .icons svg {
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+}
+
+.footer .icons .facebook {
+    background-color: #1877F2;
+}
+.footer .icons .twitter {
+    background-color: #1DA1F2;
+}
+.footer .icons .linkedin {
+    background-color: #0077B5;
+}
+.footer .icons .youtube {
+    background-color: #FF0000;
 }
