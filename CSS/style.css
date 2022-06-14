@@ -1,9 +1,12 @@
 :root {
     --dark-color: #19283F;
     --green-color: #33D1CC;
+    --yellow-color: #FFC400;
+    --section-color: #EFF7FA;
 }
 body {
     font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
     height: 10000px;
 }
 
@@ -45,4 +48,41 @@ body {
 .landing {
     background-color: var(--dark-color);
     min-height: calc(100vh - 72px);
+}
+
+/* end landing section */
+
+/* start services section  */
+.services .serv-cont svg {
+    color: var(--yellow-color);
+    font-size: 5rem;
+}
+
+.services .serv-cont::after {
+    content: '';
+    width: 120px;
+    height: 2px;
+    background-color: var(--green-color);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.services .icons {
+    height: 200px;
+}
+.services .icons svg {
+    left: 50%;
+    transform: translateX(-50%);
+}
+.services .icons .number {
+    font-size: 12rem;
+    color: var(--section-color);
+}
+.services .icons .pen {
+    color: var(--green-color);
+    font-size: 4rem;
+}
+.services .feat h4 {
+    color: var(--yellow-color);
 }
