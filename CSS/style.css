@@ -189,6 +189,7 @@ body {
     border: none;
     border-bottom: 1px solid white;
     width: 60%;
+    color: white;
 }
 
 .subscribe .box .email::placeholder {
@@ -196,7 +197,7 @@ body {
     font-weight: 700;
 }
 .subscribe .box .email:focus {
-    border: none;
+    outline: none;
 }
 
 .subscribe .box .sub-btn {
